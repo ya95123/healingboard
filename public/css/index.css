@@ -40,10 +40,18 @@ img {
   height: 50vh;
   -webkit-filter: drop-shadow(0 0 8px #fff);
           filter: drop-shadow(0 0 8px #fff);
+  pointer-events: none;
   position: absolute;
   left: 50%;
   bottom: 0;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+@media (max-width: 460px) {
+  #aniImg {
+    width: 100vw;
+    height: 100vw;
+  }
 }

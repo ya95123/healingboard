@@ -37,9 +37,18 @@ img {
   width: 50vh;
   height: 50vh;
   filter: drop-shadow(0 0 8px #fff);
+  pointer-events: none;
 
   position: absolute;
   left: 50%;
   bottom: 0;
   transform: translateX(-50%);
+}
+
+@media (max-width:460px) {
+  #aniImg {
+    width: 100vw;
+    height: 100vw;
+
+  }
 }
