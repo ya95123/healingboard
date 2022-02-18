@@ -12,6 +12,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 img {
@@ -34,12 +35,14 @@ img {
   height: 100vh;
 }
 
-.cute {
+#aniImg {
   width: 50vh;
   height: 50vh;
+  -webkit-filter: drop-shadow(0 0 8px #fff);
+          filter: drop-shadow(0 0 8px #fff);
   position: absolute;
   left: 50%;
-  bottom: 4%;
+  bottom: 0;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
