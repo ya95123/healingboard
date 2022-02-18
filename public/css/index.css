@@ -38,15 +38,21 @@ img {
 
 #title {
   width: 95%;
+  margin: auto;
   -webkit-filter: drop-shadow(0 0 4px #999);
           filter: drop-shadow(0 0 4px #999);
-  position: absolute;
-  left: 50%;
-  top: 0;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-animation: titleIn 0.5s;
+          animation: titleIn 0.5s;
   pointer-events: none;
+}
+
+#btn-frame {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  -webkit-animation: btnIn 1s;
+          animation: btnIn 1s;
 }
 
 #aniImg {
@@ -61,6 +67,58 @@ img {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+@-webkit-keyframes btnIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes btnIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes titleIn {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  50% {
+    width: 0;
+    opacity: 1;
+  }
+  100% {
+    width: 95%;
+  }
+}
+
+@keyframes titleIn {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  50% {
+    width: 0;
+    opacity: 1;
+  }
+  100% {
+    width: 95%;
+  }
 }
 
 @media (max-width: 460px) {

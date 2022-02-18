@@ -41,12 +41,16 @@ img {
 
 #title {
   width: 95%;
+  margin: auto;
   filter: drop-shadow(0 0 4px #999);
-  position: absolute;
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%);
+  animation: titleIn 0.5s;
   pointer-events: none;
+}
+
+#btn-frame {
+  width: fit-content;
+  margin: auto;
+  animation: btnIn 1s;
 }
 
 #aniImg {
@@ -59,6 +63,36 @@ img {
   left: 50%;
   bottom: 0;
   transform: translateX(-50%);
+}
+
+@keyframes btnIn {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes titleIn {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+
+  50% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 95%;
+  }
 }
 
 @media (max-width:460px) {
