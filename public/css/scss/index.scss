@@ -1,3 +1,7 @@
+$yellow:#f9ed7c;
+$pink:#ffa5db;
+$blue:#6bf0ff;
+
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +24,6 @@ img {
 #bg {
   width: 100%;
   height: 100%;
-  object-fit: cover;
   opacity: 0.9;
 
   position: absolute;
@@ -30,7 +33,20 @@ img {
 
 #app {
   width: 100%;
+  max-width: 640px;
   height: 100vh;
+  margin: auto;
+  position: relative;
+}
+
+#title {
+  width: 95%;
+  filter: drop-shadow(0 0 4px #999);
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  pointer-events: none;
 }
 
 #aniImg {
@@ -49,6 +65,5 @@ img {
   #aniImg {
     width: 100vw;
     height: 100vw;
-
   }
 }

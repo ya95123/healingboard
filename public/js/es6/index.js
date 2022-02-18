@@ -16,7 +16,11 @@ const bg = document.getElementById("bg")
 let randAniImg = aniImgArr[rand(0, aniImgArr.length - 1)].url
 
 // *隨機背景 & 動圖
-bg.setAttribute("src", bgArr[rand(0, bgArr.length - 1)].url)
+bg.setAttribute("style", `background:url(${bgArr[rand(0, bgArr.length - 1)].url});
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+`)
 app.insertAdjacentHTML("afterbegin", `
 <lottie-player id="aniImg"src="${randAniImg}" background="transparent" speed="1" loop autoplay></lottie-player>
 `)
