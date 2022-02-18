@@ -39,8 +39,8 @@ img {
 #title {
   width: 95%;
   margin: auto;
-  -webkit-filter: drop-shadow(0 0 4px #999);
-          filter: drop-shadow(0 0 4px #999);
+  -webkit-filter: drop-shadow(0 0 3px #999);
+          filter: drop-shadow(0 0 3px #999);
   -webkit-animation: titleIn 0.5s;
           animation: titleIn 0.5s;
   pointer-events: none;
