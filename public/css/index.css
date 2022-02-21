@@ -55,6 +55,36 @@ img {
           animation: btnIn 1s;
 }
 
+#btn-frame .btn-index {
+  padding: 2px 16px;
+  margin: 0 4px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  background: #6bf0ff;
+  border: 3px solid #fff;
+  border-radius: 9px;
+  -webkit-filter: drop-shadow(0 0 3px #ccc);
+          filter: drop-shadow(0 0 3px #ccc);
+  cursor: pointer;
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+}
+
+#btn-frame .btn-index:hover, #btn-frame .btn-index:active {
+  background: #ffa5db;
+}
+
+#btn-frame .btn-index:nth-child(2), #btn-frame .btn-index:nth-child(3) {
+  color: #fff;
+  background: transparent;
+  border: none;
+  padding: 0 4px;
+  -webkit-filter: drop-shadow(1px 1px 1px #ccc);
+          filter: drop-shadow(1px 1px 1px #ccc);
+}
+
 #aniImg {
   width: 50vh;
   height: 50vh;
@@ -122,6 +152,13 @@ img {
 }
 
 @media (max-width: 460px) {
+  #btn-frame .btn-index {
+    padding: 1px 12px;
+    margin: 0 1px;
+    font-size: 30px;
+    -webkit-filter: drop-shadow(0 0 2px #ccc);
+            filter: drop-shadow(0 0 2px #ccc);
+  }
   #aniImg {
     width: 100vw;
     height: 100vw;
