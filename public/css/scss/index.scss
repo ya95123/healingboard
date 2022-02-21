@@ -65,7 +65,7 @@ img {
     background: $blue;
     border: 3px solid #fff;
     border-radius: 9px;
-    filter: drop-shadow(0 0 3px #ccc);
+    filter: drop-shadow(1px 1px 1px #ccc);
     cursor: pointer;
     transition: 0.25s;
 
@@ -133,12 +133,12 @@ img {
       padding: 1px 12px;
       margin: 0 1px;
       font-size: 30px;
-      filter: drop-shadow(0 0 2px #ccc);
     }
   }
 
   #aniImg {
     width: 100vw;
     height: 100vw;
+    filter: drop-shadow(0 0 6px #fff);
   }
 }
