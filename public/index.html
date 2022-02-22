@@ -18,7 +18,7 @@
 
   <!-- *popup -->
   <div id="popup-frame">
-    <!-- 心情表達/遊戲說明 -->
+    <!-- *心情表達/遊戲說明 -->
     <div id="startInit" class="popup">
       <!-- close -->
       <div class="close">
@@ -29,13 +29,46 @@
         <button id="btn-mood" class="topic active">表達心情</button>
         <button id="btn-illustrate" class="topic">療癒說明</button>
       </div>
+
       <!-- content -->
       <div class="content">
         <!-- 填心情攔 -->
         <div id="mood-board">
-          <label for="name">暱稱</label>
-          <input id="name" type="text" maxlength="15">
+          <!-- 表情 -->
+          <div class="block">
+            <label>心情</label>
+            <div class="face-frame">
+              <i class="fa-regular fa-face-grin-hearts active"></i>
+              <i class="fa-regular fa-face-kiss-wink-heart"></i>
+              <i class="fa-regular fa-face-laugh-squint"></i>
+              <i class="fa-regular fa-face-smile"></i>
+              <i class="fa-regular fa-face-meh-blank"></i>
+              <i class="fa-regular fa-face-frown"></i>
+              <i class="fa-regular fa-face-rolling-eyes"></i>
+              <i class="fa-regular fa-face-angry"></i>
+              <i class="fa-regular fa-face-sad-cry"></i>
+            </div>
+          </div>
+
+          <!-- 暱稱 -->
+          <div class="block">
+            <label for="name">暱稱</label>
+            <input id="name" type="text" maxlength="9">
+          </div>
+
+          <!-- 話/動作 -->
+          <div class="block">
+            <label for="courage">鼓勵自己/想做的事</label>
+            <input id="courage" type="text" maxlength="15">
+          </div>
+
+          <!-- 出發 -->
+          <div class="block">
+            <button id="go">出發</button>
+          </div>
         </div>
+
+
       </div>
     </div>
   </div>
