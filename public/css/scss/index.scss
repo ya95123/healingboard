@@ -4,6 +4,10 @@ $blue:#6bf0ff;
 $orange:#FFAA6B;
 $purple:#987DFA;
 $green:#57B350;
+$des-color: #909FA6;
+
+$fs-m:22px;
+$fs-ms:20px;
 
 * {
   margin: 0;
@@ -101,8 +105,6 @@ img {
   transform: translateX(-50%);
 }
 
-#game {}
-
 #popup-frame {
   width: 100vw;
   height: 100vh;
@@ -117,7 +119,7 @@ img {
   .popup {
     width: 90%;
     max-width: 540px;
-    height: 50vh;
+    // height: 50vh;
     background: #fff;
     border: 4px solid $orange;
     border-radius: 13px 0 13px 13px;
@@ -144,7 +146,73 @@ img {
     justify-content: center;
     align-items: center;
   }
+
+  .topic-frame {
+    display: flex;
+    justify-content: center;
+  }
+
+  .topic {
+    margin: 20px 24px 0;
+    padding: 0 8px 2px;
+
+    color: $blue;
+    font-size: $fs-m;
+    font-weight: bold;
+    background: transparent;
+    border-radius: 9px;
+    border: 2px solid $blue;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.25s;
+
+    &:hover {
+      color: #fff;
+      background: $blue;
+      opacity: 1;
+    }
+  }
+
+  .active {
+    color: #fff;
+    background: $blue;
+    opacity: 1;
+  }
+
+  .content {
+    padding: 16px 24px;
+    color: $des-color;
+    font-size: $fs-ms;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
 }
+
+#mood-board {
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  #name {
+    height: $fs-ms + 8px;
+    padding: 0 8px;
+    margin: 8px 0;
+    border: none;
+    border-bottom: 1px solid $des-color;
+
+    color: $des-color;
+    font-size: $fs-ms;
+    text-align: center;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+#game {}
+
 
 
 
