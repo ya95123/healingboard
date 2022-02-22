@@ -196,7 +196,7 @@ img {
   }
 }
 
-#mood-board {
+#board-mood {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -258,6 +258,12 @@ img {
     font-weight: bold;
     cursor: pointer;
   }
+}
+
+#board-illustrate {
+  font-size: $fs-s;
+  letter-spacing: 1px;
+  text-align: center;
 }
 
 #game {}
@@ -343,7 +349,7 @@ img {
     }
   }
 
-  #mood-board {
+  #board-mood {
     input[type="text"] {
       width: 100%;
       height: $fs-s + 8px;

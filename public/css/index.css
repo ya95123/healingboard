@@ -214,7 +214,7 @@ img {
           align-items: center;
 }
 
-#mood-board {
+#board-mood {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -227,11 +227,11 @@ img {
           flex-direction: column;
 }
 
-#mood-board label {
+#board-mood label {
   cursor: text;
 }
 
-#mood-board input[type="text"] {
+#board-mood input[type="text"] {
   width: 90%;
   height: 28px;
   padding: 0 8px;
@@ -243,21 +243,21 @@ img {
   text-align: center;
 }
 
-#mood-board input[type="text"]:focus {
+#board-mood input[type="text"]:focus {
   outline: none;
 }
 
-#mood-board #courage {
+#board-mood #courage {
   width: 120%;
 }
 
-#mood-board .face-frame {
+#board-mood .face-frame {
   margin: 8px 0 0;
   font-size: 22px;
   cursor: default;
 }
 
-#mood-board .fa-regular {
+#board-mood .fa-regular {
   opacity: 0.6;
   cursor: pointer;
   -webkit-transition: 0.25s;
@@ -265,17 +265,17 @@ img {
   transition: 0.25s;
 }
 
-#mood-board .fa-regular:hover {
+#board-mood .fa-regular:hover {
   color: #FFAA6B;
   opacity: 1;
 }
 
-#mood-board .active {
+#board-mood .active {
   color: #FFAA6B;
   opacity: 1;
 }
 
-#mood-board #go {
+#board-mood #go {
   padding: 0 8px 2px;
   color: #fff;
   font-size: 20px;
@@ -284,6 +284,12 @@ img {
   border-radius: 9px;
   font-weight: bold;
   cursor: pointer;
+}
+
+#board-illustrate {
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-align: center;
 }
 
 @-webkit-keyframes btnIn {
@@ -376,19 +382,19 @@ img {
   #popup-frame .block:nth-child(3), #popup-frame .block:nth-child(4) {
     padding: 18px 0 0;
   }
-  #mood-board input[type="text"] {
+  #board-mood input[type="text"] {
     width: 100%;
     height: 26px;
     padding: 0 6px;
     font-size: 16px;
   }
-  #mood-board #courage {
+  #board-mood #courage {
     width: 100%;
   }
-  #mood-board .face-frame {
+  #board-mood .face-frame {
     text-align: center;
   }
-  #mood-board #go {
+  #board-mood #go {
     padding: 0 8px 1px;
     margin: 3px 0 0;
     font-size: 18px;
