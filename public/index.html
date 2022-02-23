@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>療癒吧！</title>
+  <!-- 看著可愛的動圖，讓泡泡成為你的祝福，一點一點療癒吧！ -->
   <!-- style -->
   <link rel="stylesheet" href="css/index.css">
   <!-- font-icon -->
@@ -17,7 +18,7 @@
   <div id="bg"></div>
 
   <!-- *popup -->
-  <div id="popup-frame">
+  <div id="popup-frame" class="noned">
     <!-- *心情表達/遊戲說明 -->
     <div id="startInit" class="popup">
       <!-- close -->
@@ -68,12 +69,24 @@
           </div>
         </div>
 
-        <div id="board-illustrate">
+        <div id="board-illustrate" class="noned">
           <div class="block">
-            <p>Step1<br>先「表達心情」後按出發！</p>
-            <p>Step2<br>會有許多泡泡出現，「點擊泡泡」來期許你心裡所想。</p>
-            <p>Step3<br>完成後有機會讓你的期許公布在心情欄上。</p>
-            <p>看著可愛的動圖，讓泡泡成為你的祝福，一點一點療癒吧！</p>
+            <p class="text-illustrate">
+              Step1<br>
+              先「表達心情」後按出發🏃
+            </p>
+            <p class="text-illustrate">
+              Step2<br>
+              「點擊泡泡」來期許你心裡所想✨
+            </p>
+            <p class="text-illustrate">
+              Step3<br>
+              有機會在「<span>心情欄 <i class="fa-solid fa-square-poll-vertical"></i></span>」上看到你🤗
+            </p>
+            <div class="demo-frame">
+              <div class="demo-bubble"></div>
+              <div class="demo-bubble"></div>
+            </div>
           </div>
         </div>
 
@@ -95,6 +108,7 @@
       </button>
       <!-- *心情欄 -->
       <button id="board" class="btn-index">
+        <!-- <i class="fa-solid fa-heart"></i> -->
         <i class="fa-solid fa-square-poll-vertical"></i>
       </button>
     </div>
